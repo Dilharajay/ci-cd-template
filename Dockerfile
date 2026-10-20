@@ -1,7 +1,6 @@
-LABEL authors="Dilhara Jayawardhana"
-
 # Build stage: install locked dependencies into a project-local virtual environment.
 FROM python:3.12-slim AS build
+LABEL authors="Dilhara Jayawardhana"
 
 ENV UV_COMPILE_BYTECODE=1 \
     UV_LINK_MODE=copy
